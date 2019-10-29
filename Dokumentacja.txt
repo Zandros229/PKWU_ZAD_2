@@ -1,0 +1,23 @@
+Po uruchomieniu projektu, 
+wpisujemy w przeglądarce link:
+http://localhost:8080/countChars/{input}
+gdzie {input} to nasz napis w którym chcemy zliczyć występowanie dużych, małych liter, znaków specjlanych i cyfr.
+W odpowiedzi otrzymamy odpowiedź w postaci
+number of lower case letters = ? - liczba małych liter
+number of upper case letters = ? - liczba dużych liter
+number of special characters = ? - liczba znaków specjlanych
+number of digits = ? - liczba cyfr
+
+Przykłady działania:
+Zapytanie:
+http://localhost:8080/countChars/dfgf54@@!!@FDFSDF664
+Odpowiedź:
+number of lower case letters = 4 number of upper case letters = 6 number of special characters = 5 number of digits = 5 
+Zapytanie:
+http://localhost:8080/countChars/dfgss66547
+Odpowiedź:
+number of lower case letters = 5 number of upper case letters = 0 number of special characters = 0 number of digits = 5
+Zapytanie:
+http://localhost:8080/countChars/dfgss665****@!!!47AAAAA
+Odpowiedź:
+number of lower case letters = 5 number of upper case letters = 5 number of special characters = 8 number of digits = 5
