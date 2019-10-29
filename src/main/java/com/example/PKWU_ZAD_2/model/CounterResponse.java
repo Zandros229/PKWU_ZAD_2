@@ -10,7 +10,7 @@ public class CounterResponse {
     private long digits;
 
     @Override
-    public String toString(){
+    public String toString() {
         return "number of lower case letters = " + lowerCaseLetters +
                 "\nnumber of upper case letters = " + upperCaseLetters +
                 "\nnumber of special characters = " + specialCharacters +

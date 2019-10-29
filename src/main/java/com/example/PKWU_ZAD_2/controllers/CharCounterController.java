@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
-public class CharCounterController  {
+public class CharCounterController {
 
     @Autowired
     private CharCounterService charCounterService;
 
     @GetMapping("/countChars/{input}")
-    public ResponseEntity<String> findAdmin(@PathVariable String input){
+    public ResponseEntity<String> findAdmin(@PathVariable String input) {
         return new ResponseEntity<>(charCounterService.countCharacters(input).toString(), HttpStatus.OK);
     }
 

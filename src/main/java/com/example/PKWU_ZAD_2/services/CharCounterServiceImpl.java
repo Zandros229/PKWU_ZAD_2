@@ -30,8 +30,7 @@ public class CharCounterServiceImpl implements CharCounterService {
         int theCount = 0;
         String specialChars = "/*!@# $%^&*()\"{}_[]|\\?/<>,.";
         for (int i = 0; i < s.length(); i++) {
-            System.out.println(s.substring(i, i + 1).codePointAt(0));
-            if (specialChars.contains(s.substring(i, i+1))) {
+            if (specialChars.contains(s.substring(i, i + 1))) {
                 theCount++;
             }
         }
